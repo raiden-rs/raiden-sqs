@@ -25,4 +25,5 @@ jobs:
         with:
           path: target
           key: ${{ runner.os }}-cargo-build-target-${{ hashFiles('**/Cargo.lock') }}
-      - run: cd test-suite && cargo test
+      - name: Test
+        run: cd test-suite && cargo test

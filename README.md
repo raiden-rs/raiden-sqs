@@ -6,7 +6,10 @@
 
 ---
 
-![CI](https://github.com/raiden-rs/raiden-sqs/workflows/CI/badge.svg)
+[![status]][actions]
+
+[status]: https://img.shields.io/github/workflow/status/raiden-rs/raiden-sqs/CI/master
+[actions]: https://github.com/raiden-rs/raiden-sqs/actions?query=branch%3Amaster
 
 ## Status
 
