@@ -4,6 +4,10 @@
     Ergonomic SQS library for Rust.
 </p>
 
+---
+
+![CI](https://github.com/raiden-rs/raiden-sqs/workflows/CI/badge.svg)
+
 ## Status
 
 Underdevelopment. No working examples.
