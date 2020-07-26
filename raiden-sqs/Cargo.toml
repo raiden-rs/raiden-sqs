@@ -1,0 +1,26 @@
+[package]
+name = "raiden-sqs"
+version = "0.0.0"
+authors = ["Yuki Kodama <endflow.net@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+raiden-sqs-derive = { version = "*", path = "../raiden-sqs-derive" }
+rusoto_credential = "0.45.0"
+rusoto_core_default = { package = "rusoto_core", version = "0.45.0", optional = true }
+rusoto_core_rustls = { package = "rusoto_core", version = "0.45.0", default_features = false, features=["rustls"], optional = true }
+rusoto_sqs_default = { package = "rusoto_sqs", version = "0.45.0", optional = true }
+rusoto_sqs_rustls = { package = "rusoto_sqs", version = "0.45.0", default_features = false, features=["rustls"], optional = true }
+serde = { version = "^1", features = ["derive"] }
+serde_json = "^1"
+serde_derive = "^1"
+
+[dev-dependencies]
+tokio = "0.2"
+
+[features]
+default = ["rusoto_core_default", "rusoto_sqs_default"]
+rustls = ["rusoto_core_rustls", "rusoto_sqs_rustls"]
+
+[[example]]
+name = "basic"
