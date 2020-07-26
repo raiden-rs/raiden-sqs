@@ -3,4 +3,5 @@
 members = [
     "raiden-sqs-derive",
     "raiden-sqs",
+    "test-suite",
 ]

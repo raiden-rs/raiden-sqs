@@ -1,0 +1,13 @@
+error: cannot find derive macro `RaidenCloudPubSub` in this scope
+ --> $DIR/invalid_derive_name.rs:4:10
+  |
+4 | #[derive(RaidenCloudPubSub, Serialize)]
+  |          ^^^^^^^^^^^^^^^^^
+
+warning: unused import: `raiden_sqs::*`
+ --> $DIR/invalid_derive_name.rs:1:5
+  |
+1 | use raiden_sqs::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default

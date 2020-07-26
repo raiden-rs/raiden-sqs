@@ -1,7 +1,5 @@
-#[macro_use]
-extern crate serde_derive;
-
 use raiden_sqs::*;
+use serde::Serialize;
 
 #[derive(RaidenSqs, Serialize, Debug)]
 #[sqs(queue_name = "MyFirstQueue")]
