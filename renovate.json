@@ -1,5 +1,9 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "schedule": [
+    "after 9am on Saturday"
+  ],
+  "timezone": "Asia/Tokyo"
 }
