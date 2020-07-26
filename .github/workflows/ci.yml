@@ -15,4 +15,8 @@ jobs:
           toolchain: stable
           profile: minimal
           override: true
+      - uses: actions/cache@v2
+        with:
+          path: target
+          key: ${{ runner.os }}-cargo-build-target-${{ hashFiles('**/Cargo.lock') }}
       - run: cd test-suite && cargo test
