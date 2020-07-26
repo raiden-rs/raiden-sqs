@@ -8,6 +8,15 @@
 
 Underdevelopment. No working examples.
 
+## Development
+
+### Test
+
+```
+cd test-suite
+cargo test
+```
+
 ## Supported APIs
 
 - [ ] AddPermission
