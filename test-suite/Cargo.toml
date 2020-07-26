@@ -9,6 +9,8 @@ publish = false
 raiden-sqs = { version = "*", path = "../raiden-sqs" }
 serde = { version = "^1", features = ["derive"] }
 serde_json = "^1"
+tokio = "0.2"
 
 [dev-dependencies]
 trybuild = "^1"
+shiplift = { git = "https://github.com/softprops/shiplift" }
