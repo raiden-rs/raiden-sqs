@@ -6,7 +6,7 @@ edition = "2018"
 
 [dependencies]
 raiden-sqs-derive = { version = "*", path = "../raiden-sqs-derive" }
-rusoto_credential = "0.45.0"
+rusoto_credential = "0.48.0"
 rusoto_core_default = { package = "rusoto_core", version = "0.45.0", optional = true }
 rusoto_core_rustls = { package = "rusoto_core", version = "0.45.0", default_features = false, features=["rustls"], optional = true }
 rusoto_sqs_default = { package = "rusoto_sqs", version = "0.45.0", optional = true }
